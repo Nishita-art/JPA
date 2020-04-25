@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+<persistence-unit name="JpaApp1">
+
+<class>com.capg.jpaapps.entities.Author</class>
+<properties>
+<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:8085:xe"/>
+<property name="javax.persistence.jdbc.user" value="system"/>
+<property name="javax.persistence.jdbc.password" value="a"/>
+<property name="elclipse.logging.level" value="SEVERE"/>
+<property name="eclipse.ddl-generation" value="create-or-extend-tables"/>
+</properties>
+</persistence-unit>
+</persistence>
